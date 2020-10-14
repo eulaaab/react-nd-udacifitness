@@ -126,8 +126,8 @@ export function getMetricMetaInfo(metric){
       displayName: "Eat",
       max: 10,
       unit: "rating",
-      step:1,
-      type: "slidier",
+      step: 1,
+      type: "slider",
       getIcon() {
         return (
           <View>
