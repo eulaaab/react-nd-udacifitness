@@ -85,7 +85,6 @@ reset = () => {
 
   render() {
     const metaInfo =getMetricMetaInfo()
-
     if (this.props.alreadyLogged) {
       return (
         <View>
