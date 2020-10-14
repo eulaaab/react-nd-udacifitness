@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {TouchableOpacity, View, Text } from 'react-native';
-import {getMetricMetaInfo, timeToString} from "../utils/helpers";
+import {getMetricMetaInfo, timeToString, getDailyReminderValue} from "../utils/helpers";
 import UdaciSlider from "./UdaciSlider";
 import UdacitySteppers from "./UdaciSteppers";
 import DateHeader from "./DateHeader";
@@ -8,7 +8,7 @@ import {Ionicons} from "@expo/vector-icons";
 import TextButton from "./TextButton";
 import {submitEntry, removeEntry} from "../utils/api";
 import {connect} from "react-redux";
-import {addEntry, AddEntry} from "../actions"
+import {addEntry} from "../actions"
 
 function SubmitBtn ({onPress}) {
   return (
@@ -58,7 +58,10 @@ submit = () => {
  const key = timeToString();
  const entry = this.state
  
- //update redux
+   this.props.dispatch(addEntry({
+    [key]: entry
+  }))
+
  this.setState(() => ({
   run: 0,
   bike: 0,
@@ -67,44 +70,37 @@ submit = () => {
   eat:0
  }))
 
- //navigate to home
-
- submitEntry = ({key, entry})
-
- //Clear local notification
-
+ submitEntry({key, entry})
 }
-
 reset = () => {
   const key = timeToString()
 
-//updates Redux
   this.props.dispatch(addEntry({
-    [key]: entry
+    [key]: getDailyReminderValue()
   }))
 
-  //route to Home
+  // Route to Home
 
-  //update 'DB' (AsyncStorage)
   removeEntry(key)
 }
+render() {
+  const metaInfo = getMetricMetaInfo()
 
-  render() {
-    const metaInfo =getMetricMetaInfo()
-    if (this.props.alreadyLogged) {
-      return (
-        <View>
-          <Ionicons name="ios-happy"
-          size={100} />
-          <Text>
-            You already logged your information for today
-          </Text>
-          <TextButton onPress={this.reset}>
-            Reset
-          </TextButton>
-        </View>
-      )
-    }
+  if (this.props.alreadyLogged) {
+    return (
+      <View>
+        <Ionicons
+          name={'ios-happy'}
+          size={100}
+        />
+        <Text>You already logged your information for today.</Text>
+        <TextButton onPress={this.reset}>
+          Reset
+        </TextButton>
+      </View>
+    )
+  }
+
     return (
       <View>
         <DateHeader date={(new Date()).toLocaleDateString()}/>
@@ -131,4 +127,11 @@ reset = () => {
   }
 }
 
-export default connect()(AddEntry);
+
+function mapStateToProps(state){
+  const key =timeToString();
+  return {
+    alreadyLogged: state[key] && typeof state[key].today === "undefined",
+  }
+}
+export default connect(mapStateToProps)(AddEntry);
