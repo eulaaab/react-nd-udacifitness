@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		559B617225339CBF001FBA3A /* UdaciFitness_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B617125339CBF001FBA3A /* UdaciFitness_iOSApp.swift */; };
+		559B617425339CBF001FBA3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B617325339CBF001FBA3A /* ContentView.swift */; };
+		559B617625339CC1001FBA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559B617525339CC1001FBA3A /* Assets.xcassets */; };
+		559B617925339CC1001FBA3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559B617825339CC1001FBA3A /* Preview Assets.xcassets */; };
+		559B618425339CC1001FBA3A /* UdaciFitness_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B618325339CC1001FBA3A /* UdaciFitness_iOSTests.swift */; };
+		559B618F25339CC1001FBA3A /* UdaciFitness_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559B618E25339CC1001FBA3A /* UdaciFitness_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		559B618025339CC1001FBA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559B616625339CBF001FBA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559B616D25339CBF001FBA3A;
+			remoteInfo = "UdaciFitness-iOS";
+		};
+		559B618B25339CC1001FBA3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 559B616625339CBF001FBA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 559B616D25339CBF001FBA3A;
+			remoteInfo = "UdaciFitness-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		559B616E25339CBF001FBA3A /* UdaciFitness-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UdaciFitness-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B617125339CBF001FBA3A /* UdaciFitness_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdaciFitness_iOSApp.swift; sourceTree = "<group>"; };
+		559B617325339CBF001FBA3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		559B617525339CC1001FBA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		559B617825339CC1001FBA3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		559B617A25339CC1001FBA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559B617F25339CC1001FBA3A /* UdaciFitness-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UdaciFitness-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B618325339CC1001FBA3A /* UdaciFitness_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdaciFitness_iOSTests.swift; sourceTree = "<group>"; };
+		559B618525339CC1001FBA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559B618A25339CC1001FBA3A /* UdaciFitness-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UdaciFitness-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		559B618E25339CC1001FBA3A /* UdaciFitness_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdaciFitness_iOSUITests.swift; sourceTree = "<group>"; };
+		559B619025339CC1001FBA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		559B616B25339CBF001FBA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B617C25339CC1001FBA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B618725339CC1001FBA3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		559B616525339CBF001FBA3A = {
+			isa = PBXGroup;
+			children = (
+				559B617025339CBF001FBA3A /* UdaciFitness-iOS */,
+				559B618225339CC1001FBA3A /* UdaciFitness-iOSTests */,
+				559B618D25339CC1001FBA3A /* UdaciFitness-iOSUITests */,
+				559B616F25339CBF001FBA3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		559B616F25339CBF001FBA3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				559B616E25339CBF001FBA3A /* UdaciFitness-iOS.app */,
+				559B617F25339CC1001FBA3A /* UdaciFitness-iOSTests.xctest */,
+				559B618A25339CC1001FBA3A /* UdaciFitness-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		559B617025339CBF001FBA3A /* UdaciFitness-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				559B617125339CBF001FBA3A /* UdaciFitness_iOSApp.swift */,
+				559B617325339CBF001FBA3A /* ContentView.swift */,
+				559B617525339CC1001FBA3A /* Assets.xcassets */,
+				559B617A25339CC1001FBA3A /* Info.plist */,
+				559B617725339CC1001FBA3A /* Preview Content */,
+			);
+			path = "UdaciFitness-iOS";
+			sourceTree = "<group>";
+		};
+		559B617725339CC1001FBA3A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				559B617825339CC1001FBA3A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		559B618225339CC1001FBA3A /* UdaciFitness-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				559B618325339CC1001FBA3A /* UdaciFitness_iOSTests.swift */,
+				559B618525339CC1001FBA3A /* Info.plist */,
+			);
+			path = "UdaciFitness-iOSTests";
+			sourceTree = "<group>";
+		};
+		559B618D25339CC1001FBA3A /* UdaciFitness-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				559B618E25339CC1001FBA3A /* UdaciFitness_iOSUITests.swift */,
+				559B619025339CC1001FBA3A /* Info.plist */,
+			);
+			path = "UdaciFitness-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		559B616D25339CBF001FBA3A /* UdaciFitness-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B619325339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOS" */;
+			buildPhases = (
+				559B616A25339CBF001FBA3A /* Sources */,
+				559B616B25339CBF001FBA3A /* Frameworks */,
+				559B616C25339CBF001FBA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UdaciFitness-iOS";
+			productName = "UdaciFitness-iOS";
+			productReference = 559B616E25339CBF001FBA3A /* UdaciFitness-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		559B617E25339CC1001FBA3A /* UdaciFitness-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B619625339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOSTests" */;
+			buildPhases = (
+				559B617B25339CC1001FBA3A /* Sources */,
+				559B617C25339CC1001FBA3A /* Frameworks */,
+				559B617D25339CC1001FBA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559B618125339CC1001FBA3A /* PBXTargetDependency */,
+			);
+			name = "UdaciFitness-iOSTests";
+			productName = "UdaciFitness-iOSTests";
+			productReference = 559B617F25339CC1001FBA3A /* UdaciFitness-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		559B618925339CC1001FBA3A /* UdaciFitness-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 559B619925339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOSUITests" */;
+			buildPhases = (
+				559B618625339CC1001FBA3A /* Sources */,
+				559B618725339CC1001FBA3A /* Frameworks */,
+				559B618825339CC1001FBA3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				559B618C25339CC1001FBA3A /* PBXTargetDependency */,
+			);
+			name = "UdaciFitness-iOSUITests";
+			productName = "UdaciFitness-iOSUITests";
+			productReference = 559B618A25339CC1001FBA3A /* UdaciFitness-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		559B616625339CBF001FBA3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					559B616D25339CBF001FBA3A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					559B617E25339CC1001FBA3A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 559B616D25339CBF001FBA3A;
+					};
+					559B618925339CC1001FBA3A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 559B616D25339CBF001FBA3A;
+					};
+				};
+			};
+			buildConfigurationList = 559B616925339CBF001FBA3A /* Build configuration list for PBXProject "UdaciFitness-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 559B616525339CBF001FBA3A;
+			productRefGroup = 559B616F25339CBF001FBA3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				559B616D25339CBF001FBA3A /* UdaciFitness-iOS */,
+				559B617E25339CC1001FBA3A /* UdaciFitness-iOSTests */,
+				559B618925339CC1001FBA3A /* UdaciFitness-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		559B616C25339CBF001FBA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B617925339CC1001FBA3A /* Preview Assets.xcassets in Resources */,
+				559B617625339CC1001FBA3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B617D25339CC1001FBA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B618825339CC1001FBA3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		559B616A25339CBF001FBA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B617425339CBF001FBA3A /* ContentView.swift in Sources */,
+				559B617225339CBF001FBA3A /* UdaciFitness_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B617B25339CC1001FBA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B618425339CC1001FBA3A /* UdaciFitness_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		559B618625339CC1001FBA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559B618F25339CC1001FBA3A /* UdaciFitness_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559B618125339CC1001FBA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559B616D25339CBF001FBA3A /* UdaciFitness-iOS */;
+			targetProxy = 559B618025339CC1001FBA3A /* PBXContainerItemProxy */;
+		};
+		559B618C25339CC1001FBA3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 559B616D25339CBF001FBA3A /* UdaciFitness-iOS */;
+			targetProxy = 559B618B25339CC1001FBA3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		559B619125339CC1001FBA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		559B619225339CC1001FBA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		559B619425339CC1001FBA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UdaciFitness-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UdaciFitness-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		559B619525339CC1001FBA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UdaciFitness-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "UdaciFitness-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		559B619725339CC1001FBA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				INFOPLIST_FILE = "UdaciFitness-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdaciFitness-iOS.app/UdaciFitness-iOS";
+			};
+			name = Debug;
+		};
+		559B619825339CC1001FBA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				INFOPLIST_FILE = "UdaciFitness-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdaciFitness-iOS.app/UdaciFitness-iOS";
+			};
+			name = Release;
+		};
+		559B619A25339CC1001FBA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				INFOPLIST_FILE = "UdaciFitness-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UdaciFitness-iOS";
+			};
+			name = Debug;
+		};
+		559B619B25339CC1001FBA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5F2QBM9JG;
+				INFOPLIST_FILE = "UdaciFitness-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.UdaciFitness-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "UdaciFitness-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		559B616925339CBF001FBA3A /* Build configuration list for PBXProject "UdaciFitness-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B619125339CC1001FBA3A /* Debug */,
+				559B619225339CC1001FBA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B619325339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B619425339CC1001FBA3A /* Debug */,
+				559B619525339CC1001FBA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B619625339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B619725339CC1001FBA3A /* Debug */,
+				559B619825339CC1001FBA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		559B619925339CC1001FBA3A /* Build configuration list for PBXNativeTarget "UdaciFitness-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559B619A25339CC1001FBA3A /* Debug */,
+				559B619B25339CC1001FBA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 559B616625339CBF001FBA3A /* Project object */;
+}
