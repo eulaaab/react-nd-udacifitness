@@ -1,7 +1,10 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import Slider from '@react-native-community/slider'
-import AddEntry from "./components/AddEntry"
+import Slider from '@react-native-community/slider';
+import AddEntry from "./components/AddEntry";
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+import reducer from "./reducers"
 
 export default class App extends React.Component {
   state = {
@@ -18,35 +21,12 @@ export default class App extends React.Component {
   }
   render(){
     return (
-      <>
-       <View  styles={styles.container}>
+      <Provider store={createStore(reducer)}>
+         <View  styles={styles.container}>
          <AddEntry />
-       {
-         /*
-   <Slider 
-   style={{width: 200, height: 40}}
-   minimumValue={0}
-   maximumValue={1}
-   minimumTrackTintColor="#FFFFFF"
-   maximumTrackTintColor="#000000"
-   value ={this.state.value}
-   onValueChange={(value) => this.setState(() => ({value}))}
-   />
-   <Text>
-     Value: {this.state.value}
-   </Text>
-    <TouchableNativeFeedback 
-       background={TouchableNativeFeedback.SelectableBackground()}
-       onPress={this.handlePress} underlayColor="#d4271b">
-         <View style={styles.btn} >
-
-                <Text style={styles.btnText}>Touchable Highlight</Text>
          </View>
-              </TouchableNativeFeedback>
-        */ 
-        }
-    </View>
-      </>
+      </Provider>
+ 
     )
   }
 }

@@ -6,7 +6,9 @@ import UdacitySteppers from "./UdaciSteppers";
 import DateHeader from "./DateHeader";
 import {Ionicons} from "@expo/vector-icons";
 import TextButton from "./TextButton";
-import {submitEntry, removeEntry} from "../utils/api"
+import {submitEntry, removeEntry} from "../utils/api";
+import {connect} from "react-redux";
+import {addEntry, AddEntry} from "../actions"
 
 function SubmitBtn ({onPress}) {
   return (
@@ -16,7 +18,7 @@ function SubmitBtn ({onPress}) {
   )
 }
 
-export default class AddEntry extends Component {
+class AddEntry extends Component {
   state = {
     run: 0,
     bike: 0,
@@ -76,10 +78,14 @@ submit = () => {
 reset = () => {
   const key = timeToString()
 
-  //update Redux
+//updates Redux
+  this.props.dispatch(addEntry({
+    [key]: entry
+  }))
 
   //route to Home
 
+  //update 'DB' (AsyncStorage)
   removeEntry(key)
 }
 
@@ -124,3 +130,5 @@ reset = () => {
     )
   }
 }
+
+export default connect()(AddEntry);
