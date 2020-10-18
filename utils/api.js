@@ -12,8 +12,6 @@ export function removeEntry(key) {
     const data = JSON.parse(results)
     data[key] = undefined
     delete data[key]
-    AsyncStorage.getItem(CALENDAR_STORAGE_KEY, JSON.stringify(data))
-  }
-  )
-
+    AsyncStorage.setItem(CALENDAR_STORAGE_KEY, JSON.stringify(data))
+  })
 }
